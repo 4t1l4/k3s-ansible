@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["master", "608-renovate"],
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":dependencyDashboard"
   ]
 }
