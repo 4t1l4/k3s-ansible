@@ -11,7 +11,7 @@ ansible-core==2.18.0
     #   -r requirements.in
     #   ansible-compat
     #   molecule
-attrs==23.2.0
+attrs==25.1.0
     # via
     #   jsonschema
     #   referencing
