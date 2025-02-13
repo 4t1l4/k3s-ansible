@@ -6,7 +6,7 @@
       "customType": "regex",
       "fileMatch": ["inventory\\/.*all\\.ya?ml$"],
       "matchStrings": [
-        "#\\srenovate:\\sdepName=(?<depName>.*?)\\sdatasource=(?<datasource>.*?)\\s.*:\\s(?<currentValue>.?)$"
+        "#\\srenovate:\\sdepName=(?<depName>.*?)\\sdatasource=(?<datasource>.*?)\\s.*:\\s(?<currentValue>.*?)$"
       ]
     }
   ],
