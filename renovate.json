@@ -1,8 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "baseBranches": ["master", "608-2-renovate"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["**/all\\.ya?ml$"],
+      "matchStrings": [
+        "#\\srenovate:\\sdepName=(?<depName>.*?)\\sdatasource=(?<datasource>.*?)\\s.*:\\s(?<currentValue>.?)$"
+      ]
+    }
+  ],
   "extends": [
     "config:recommended",
     ":dependencyDashboard"
+  ],
+  "packageRules": [
+    {
+      "description": "Use custom regex versioning for k3s",
+      "matchDatasources": ["github-releases"],
+      "matchPackageNames": ["k3s"],
+      "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
+    }
   ]
 }
