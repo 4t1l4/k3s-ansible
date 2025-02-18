@@ -5,7 +5,7 @@
     {
       "customType": "regex",
       "datasourceTemplate": "github-releases",
-      "fileMatch": ["*all\\.ya?ml$"],
+      "fileMatch": ["all\\.ya?ml$"],
       "matchStrings": [
         "#\\s+renovate:\\s+depName=(?<depName>.*?)\\s+datasource=(?<datasource>.*?)\\s+.*:\\s+(?<currentValue>.*?)$"
       ],
