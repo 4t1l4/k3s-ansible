@@ -4,10 +4,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "datasourceTemplate": "github-releases",
       "fileMatch": ["all\\.ya?ml$"],
       "matchStrings": [
-        "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+\\S+:\\s+(?<currentValue>.*)$"
+        "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+\\S+:\\s+(?<currentValue>\\S+)$"
       ],
       "versioningTemplate": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
     }
