@@ -5,7 +5,11 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "\\.ya?ml$",
+        "inventory/sample/group_vars/all.yml$",
+        "roles/k3s_server/defaults/main.yml$",
+        "roles/k3s_server/meta/main.yml$",
+        "roles/k3s_server_post/defaults/main.yml$",
+        "roles/k3s_server_post/meta/main.yml$",
         "README.md$"
       ],
       "matchStrings": [
