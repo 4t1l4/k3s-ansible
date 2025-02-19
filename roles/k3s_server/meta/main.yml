@@ -80,6 +80,7 @@ argument_specs:
 
       kube_vip_tag_version:
         description: Image tag for kube-vip
+        # renovate: depName=kube-vip/kube-vip datasource=github-releases
         default: v0.7.2
 
       kube_vip_cloud_provider_tag_version:
@@ -92,10 +93,12 @@ argument_specs:
 
       metal_lb_controller_tag_version:
         description: Image tag for MetalLB
+        # renovate: depName=metallb/metallb datasource=github-releases
         default: v0.14.3
 
       metal_lb_speaker_tag_version:
         description: Image tag for MetalLB
+        # renovate: depName=metallb/metallb datasource=github-releases
         default: v0.14.3
 
       metal_lb_type:

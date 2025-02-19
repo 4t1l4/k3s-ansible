@@ -9,6 +9,7 @@ calico_ebpf: false
 calico_encapsulation: VXLANCrossSubnet
 calico_natOutgoing: Enabled  # noqa var-naming
 calico_nodeSelector: all()  # noqa var-naming
+# renovate: depName=projectcalico/calico datasource=github-releases
 calico_tag: v3.27.2
 
 cilium_bgp: false

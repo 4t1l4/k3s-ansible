@@ -8,6 +8,7 @@ group_name_master: master
 kube_vip_arp: true
 kube_vip_iface:
 kube_vip_cloud_provider_tag_version: main
+# renovate: depName=kube-vip/kube-vip datasource=github-releases
 kube_vip_tag_version: v0.7.2
 
 kube_vip_bgp: false
@@ -19,7 +20,9 @@ kube_vip_bgp_peeras: "64512"
 kube_vip_bgp_peers: []
 kube_vip_bgp_peers_groups: ['k3s_master']
 
+# renovate: depName=metallb/metallb datasource=github-releases
 metal_lb_controller_tag_version: v0.14.3
+# renovate: depName=metallb/metallb datasource=github-releases
 metal_lb_speaker_tag_version: v0.14.3
 metal_lb_type: native
 
