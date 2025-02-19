@@ -44,7 +44,7 @@ argument_specs:
       calico_tag:
         description: Calico version tag
         # renovate: depName=projectcalico/calico datasource=github-releases
-        default: v3.27.2
+        default: v3.29.2
 
       cilium_bgp:
         description:
