@@ -4,7 +4,10 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["all\\.ya?ml$"],
+      "fileMatch": [
+        "\\.ya?ml$",
+        "README.md$"
+      ],
       "matchStrings": [
         "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+\\S+:\\s+(?<currentValue>\\S+)",
         "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+-->\\s+|.*|.*|.*|\\s+`(?<currentValue>\\S+)`"
