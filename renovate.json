@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": ["master", "608-2-renovate"],
+  "baseBranches": ["master"],
   "customManagers": [
     {
       "customType": "regex",
@@ -10,7 +10,7 @@
         "roles/k3s_server/meta/main.yml$",
         "roles/k3s_server_post/defaults/main.yml$",
         "roles/k3s_server_post/meta/main.yml$",
-        "README.md$"
+        "^README.md$"
       ],
       "matchStrings": [
         "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+\\S+:\\s+(?<currentValue>\\S+)",
