@@ -150,7 +150,7 @@ See the commands [here](https://technotim.live/posts/k3s-etcd-ansible/#testing-y
 | `k3s_server` | `kube_vip_cloud_provider_tag_version` | string | `main` | Not required | Tag for kube-vip-cloud-provider manifest when enable |
 | `k3s_server`, `k3_server_post` | `kube_vip_lb_ip_range` | string | `~` | Not required | IP range for kube-vip load balancer |
 | `k3s_server`, `k3s_server_post` | `metal_lb_controller_tag_version` | string | `v0.14.3` | Not required | Image tag for MetalLB |
-| `k3s_server` | `metal_lb_speaker_tag_version` | string | <!-- # renovate: depName=metallb/metallb datasource=github-releases --> `v0.14.3` | Not required | Image tag for MetalLB |
+| `k3s_server` | `metal_lb_speaker_tag_version` | string | <!-- # renovate: depName=metallb/metallb datasource=github-releases --> `v0.14.9` | Not required | Image tag for MetalLB |
 | `k3s_server` | `metal_lb_type` | string | `native` | Not required | Use FRR mode or native. Valid values are `frr` and `native` |
 | `k3s_server` | `retry_count` | int | `20` | Not required | Amount of retries when verifying that nodes joined |
 | `k3s_server` | `server_init_args` | string | ❌ | Not required | Arguments for server nodes |
