@@ -162,7 +162,7 @@ See the commands [here](https://technotim.live/posts/k3s-etcd-ansible/#testing-y
 | `k3s_server_post` | `calico_natOutgoing` | string | `Enabled` | Not required | IP pool NAT outgoing |
 | `k3s_server_post` | `calico_nodeSelector` | string | `all()` | Not required | IP pool node selector |
 | `k3s_server_post` | `calico_iface` | string | `~` | Not required | The network interface used for when Calico is enabled |
-| `k3s_server_post` | `calico_tag` | string | <!-- # renovate: depName=projectcalico/calico datasource=github-releases --> `v3.27.2` | Not required | Calico version tag |
+| `k3s_server_post` | `calico_tag` | string | <!-- # renovate: depName=projectcalico/calico datasource=github-releases --> `v3.29.2` | Not required | Calico version tag |
 | `k3s_server_post` | `cilium_bgp_my_asn` | int | `64513` | Not required | Local ASN for BGP peer |
 | `k3s_server_post` | `cilium_bgp_peer_asn` | int | `64512` | Not required | BGP peer ASN |
 | `k3s_server_post` | `cilium_bgp_peer_address` | string | `~` | Not required | BGP peer address |
