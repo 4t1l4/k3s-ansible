@@ -22,7 +22,7 @@ calico_tag: v3.28.0 # calico version tag
 # cilium_iface: "eth0"
 cilium_mode: native # native when nodes on same subnet or using bgp, else set routed
 # renovate: depName=cilium/cilium datasource=github-releases
-cilium_tag: v1.16.0 # cilium version tag
+cilium_tag: v1.17.1 # cilium version tag
 cilium_hubble: true # enable hubble observability relay and ui
 
 # if using calico or cilium, you may specify the cluster pod cidr pool
