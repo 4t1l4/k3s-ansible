@@ -146,13 +146,11 @@ See the commands [here](https://technotim.live/posts/k3s-etcd-ansible/#testing-y
 | `k3s_server` | `kube_vip_bgp_peers` | list | `[]` | Not required | List of BGP peer ASN & address pairs |
 | `k3s_server` | `kube_vip_bgp_peers_groups` | list | `['k3s_master']` | Not required | Inventory group in which to search for additional `kube_vip_bgp_peers` parameters to merge. |
 | `k3s_server` | `kube_vip_iface` | string | `~` | Not required | Explicitly define an interface that ALL control nodes should use to propagate the VIP, define it here. Otherwise, kube-vip will determine the right interface automatically at runtime. |
-<!-- # renovate: depName=kube-vip/kube-vip datasource=github-releases -->
-| `k3s_server` | `kube_vip_tag_version` | string | `v0.7.2` | Not required | Image tag for kube-vip |
+| `k3s_server` | `kube_vip_tag_version` | string | <!-- # renovate: depName=kube-vip/kube-vip datasource=github-releases --> `v0.7.2` | Not required | Image tag for kube-vip |
 | `k3s_server` | `kube_vip_cloud_provider_tag_version` | string | `main` | Not required | Tag for kube-vip-cloud-provider manifest when enable |
 | `k3s_server`, `k3_server_post` | `kube_vip_lb_ip_range` | string | `~` | Not required | IP range for kube-vip load balancer |
 | `k3s_server`, `k3s_server_post` | `metal_lb_controller_tag_version` | string | `v0.14.3` | Not required | Image tag for MetalLB |
-<!-- # renovate: depName=metallb/metallb datasource=github-releases -->
-| `k3s_server` | `metal_lb_speaker_tag_version` | string | `v0.14.3` | Not required | Image tag for MetalLB |
+| `k3s_server` | `metal_lb_speaker_tag_version` | string | <!-- # renovate: depName=metallb/metallb datasource=github-releases --> `v0.14.3` | Not required | Image tag for MetalLB |
 | `k3s_server` | `metal_lb_type` | string | `native` | Not required | Use FRR mode or native. Valid values are `frr` and `native` |
 | `k3s_server` | `retry_count` | int | `20` | Not required | Amount of retries when verifying that nodes joined |
 | `k3s_server` | `server_init_args` | string | ❌ | Not required | Arguments for server nodes |
@@ -164,8 +162,7 @@ See the commands [here](https://technotim.live/posts/k3s-etcd-ansible/#testing-y
 | `k3s_server_post` | `calico_natOutgoing` | string | `Enabled` | Not required | IP pool NAT outgoing |
 | `k3s_server_post` | `calico_nodeSelector` | string | `all()` | Not required | IP pool node selector |
 | `k3s_server_post` | `calico_iface` | string | `~` | Not required | The network interface used for when Calico is enabled |
-<!-- # renovate: depName=projectcalico/calico datasource=github-releases -->
-| `k3s_server_post` | `calico_tag` | string | `v3.27.2` | Not required | Calico version tag |
+| `k3s_server_post` | `calico_tag` | string | <!-- # renovate: depName=projectcalico/calico datasource=github-releases --> `v3.27.2` | Not required | Calico version tag |
 | `k3s_server_post` | `cilium_bgp_my_asn` | int | `64513` | Not required | Local ASN for BGP peer |
 | `k3s_server_post` | `cilium_bgp_peer_asn` | int | `64512` | Not required | BGP peer ASN |
 | `k3s_server_post` | `cilium_bgp_peer_address` | string | `~` | Not required | BGP peer address |

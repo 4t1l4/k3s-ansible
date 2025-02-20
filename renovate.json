@@ -14,7 +14,7 @@
       ],
       "matchStrings": [
         "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+\\S+:\\s+(?<currentValue>\\S+)",
-        "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+-->\\s+|.*|.*|.*|\\s+`(?<currentValue>\\S+)`"
+        "#\\s+renovate:\\s+depName=(?<depName>\\S+)\\s+datasource=(?<datasource>\\S+)\\s+-->\\s+`(?<currentValue>\\S+)`"
       ]
     }
   ],
